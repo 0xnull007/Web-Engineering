@@ -21,7 +21,7 @@ class Circle implements TwoDimensionalShape
 		System.out.println("Enter radius of circle");
 		this.radius = in1.nextDouble();
 
-		in1.close();
+		//in1.close();
 	}
 
 	public String toString()
@@ -49,7 +49,7 @@ class Square implements TwoDimensionalShape
 		System.out.println("Enter length of side of the Square");
 		this.side = in.nextDouble();
 
-		in.close();
+		//in.close();
 	}
 
 	public String toString()
@@ -81,7 +81,7 @@ class Triangle implements TwoDimensionalShape
 		System.out.println("Enter height of Triangle");
 		this.height = in.nextDouble();
 
-		in.close();
+		//in.close();
 	}
 
 	public String toString()
