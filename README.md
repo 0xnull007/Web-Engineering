@@ -1,2 +1,2 @@
 # Web-Engineering
-This repo contains all the codes of my labs.
+This repo contains all solutions of Web labs.
