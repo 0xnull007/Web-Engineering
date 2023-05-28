@@ -62,10 +62,10 @@ class EmployeeData {
 			System.out.println("Try AGAIN with a different ID!");
 			addEmployee();
 
-			return; // to avoid calling addObject() in case of invalidEmployeeException
+			return; // to avoid calling addObject(), in case of invalidEmployeeException
 		}
 
-		sc.nextLine(); // to ignore '\n' already in inputStream
+		sc.nextLine(); // to ignore '\n', already in inputStream
 		System.out.print("Enter name: ");
 		name = sc.nextLine();
 
