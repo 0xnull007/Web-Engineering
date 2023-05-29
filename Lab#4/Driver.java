@@ -62,7 +62,7 @@ class EmployeeData {
 			System.out.println("Try AGAIN with a different ID!");
 			addEmployee();
 
-			return; // to avoid calling addObject(), in case of invalidEmployeeException
+			return; // to avoid calling addObject(), in case of invalid Employee
 		}
 
 		sc.nextLine(); // to ignore '\n', already in inputStream
@@ -172,11 +172,11 @@ public class Driver {
 			try {
 				choice = sc.nextInt();
 
-			} catch (NumberFormatException e) {
-				System.out.println("Invalid choice!");
+			} catch (InputMismatchException e) {
+				System.out.println("Invalid choice!\n");
 				init();
-
-				break;
+			//	return;	// no advantage of writing "return" here.
+				
 			}
 
 			switch (choice) {
@@ -200,6 +200,8 @@ public class Driver {
 				case 7:
 					System.out.println("Exiting .......");
 					System.exit(0);
+				default:
+					System.out.println("Invalid choice!");
 			}
 		}
 	}
