@@ -7,7 +7,7 @@ public class firstProgram {
 		for (int i = 0; i < dimensions.length; i++) {
 			dimensions[i] = Double.parseDouble(args[i + 1]);
 		}
-
+		// calling calculateArea() method with specific arguments
 		double area = calculateArea(shape, dimensions);
 
 		if (area != -1) {
