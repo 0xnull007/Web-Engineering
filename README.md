@@ -1,2 +1,2 @@
 # Web-Engineering
-This repo contains all solutions of Web labs.
+This repo contains material related to my Web Engineering course.
