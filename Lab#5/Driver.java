@@ -1,13 +1,7 @@
 import java.sql.*;
 import java.util.*;
 
-
 class AddressBook{
-	String name;
-	String address;
-	String city;
-	String phone;
-
 	Connection con;
 	Statement st;
 	
@@ -17,7 +11,7 @@ class AddressBook{
 
 			String url = "jdbc:mysql://127.0.0.1/AddressBook";
     			con=DriverManager.getConnection(url,"root","root");
-			System.out.println("Connection Succeded.");
+			//System.out.println("Connection Succeded.");
 			st=con.createStatement();
 
 		} catch(SQLException e) {
