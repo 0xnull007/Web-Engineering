@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Person Info</title>
+
+    <style>
+      input[type="text"],
+      select {
+        width: 15%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 10%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      div.form {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h3>Add Person</h3>
+      <form action="personInfo" method="post">
+        <input type="hidden" name="action" value="create" />
+        <label for="title">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="author">Address:</label>
+        <input type="text" id="author" name="address" required />
+        <br />
+        <label for="isbn">Phone No:</label>
+        <input type="text" id="phone" name="phone" required />
+        <br />
+        <input type="submit" value="Add Details" />
+      </form>
+
+      <h3>Update Person Info</h3>
+      <form action="personInfo" method="post">
+        <input type="hidden" name="action" value="update" />
+        <label for="title">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="author">Address:</label>
+        <input type="text" id="author" name="address" required />
+        <br />
+        <label for="isbn">Phone No:</label>
+        <input type="text" id="phone" name="phone" required />
+        <br />
+        <input type="submit" value="Update Details" />
+      </form>
+
+      <h3>Delete Person Info</h3>
+      <form action="personInfo" method="post">
+        <input type="hidden" name="action" value="delete" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Dname" required />
+        <br />
+        <input type="submit" value="Delete Person Info" />
+      </form>
+
+      <h3>Show All Persons Info</h3>
+      <form action="personInfo" method="get">
+        <input type="hidden" value="getBooks" />
+        <input type="submit" value="Show All Records" />
+      </form>
+    </div>
+  </body>
+</html>
