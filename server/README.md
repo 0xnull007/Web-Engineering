@@ -5,7 +5,7 @@ C:\Users\0xnull\apache-tomcat-10.1.10\webapps\lab9
 
 ![img](/images/pre.png)
 
-**2)** After runing this server.bat file, it will compile all java files, then start tomcat server and then open index.html file in your default web-browser. **Note that, if there is no index.html file in your project folder, it will show you a 404 error. Then you have to type the name of html file manually in browser's url.** So, always try to name the home page of your project as index.html.
+**2)** After runing this server.bat file, it will compile all java files, then start tomcat server and then open index.html file in your default web-browser. **Note that, if there is no index.html file in your project folder, it will show you a 404 error. Then, in the browser's url, manually type the name of the html file. ** So, always try to name the home page of your project as index.html.
 
 ![img](/images/2.png)
 
